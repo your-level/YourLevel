@@ -1,0 +1,142 @@
+{
+	"names":[
+		"Excel",
+		"English"
+	],
+
+	"Excel":[
+		{
+			"caption":"What are the main applications of Excel?",
+			"Explanation":"What specific problems is Excel designed for?",
+			"answers":[
+				{
+					"name":"Creating reports and calculations",
+					"flag":true
+				},
+				{
+					"name":"Web application development",
+					"flag":false
+				},
+				{
+					"name":"Making plans for the time period",
+					"flag":false
+				},
+				{
+					"name":"Online communications",
+					"flag":false
+				}
+			]
+		},
+		{
+			"caption":"Formulas in Excel are?",
+			"Explanation":"What are Excel formulas and what should they contain?",
+			"answers":[
+				{
+					"name":"Functions in which you need to enter parameters in a certain order",
+					"flag":true
+				},
+				{
+					"name":"Code in the VBA programming language",
+					"flag":false
+				},
+				{
+					"name":"The user's unique language, which he himself can change and customize to achieve his goals",
+					"flag":false
+				}
+			]
+		},
+		{
+			"caption":"Why do I need pivot tables?",
+			"Explanation":"What practical problems do pivot tables solve?",
+			"answers":[
+				{
+					"name":"I view and group information in the context of certain parameters",
+					"flag":true
+				},
+				{
+					"name":"To create better reports than in Word",
+					"flag":false
+				},
+				{
+					"name":"To create accounting transactions",
+					"flag":false
+				},
+				{
+					"name":"To group data instead of formulas",
+					"flag":false
+				}
+			]
+		}
+		
+	],
+	"English":[
+		{
+			"caption":"Choose the correct answer",
+			"Explanation":"-",
+			"answers":[
+				{
+					"name":"My parents are doctors",
+					"flag":true
+				},
+				{
+					"name":"Is your father a doctor?",
+					"flag":true
+				},
+				{
+					"name":"Your sister isn’t a model",
+					"flag":true
+				},
+				{
+					"name":"Your sister isn’t a model",
+					"flag":false
+				},
+				{
+					"name":"Cheese are very delicious",
+					"flag":false
+				}
+			]
+		},
+		{
+			"caption":"Choose incorrect answer",
+			"Explanation":"-",
+			"answers":[
+				{
+					"name":"Have you ever been to Minsk?",
+					"flag":false
+				},
+				{
+					"name":"If i be rich, i have all possibilities",
+					"flag":true
+				},
+				{
+					"name":"I didn’t started a process",
+					"flag":true
+				}
+			]
+		},
+		{
+			"caption":"Choose suitable words from the list (there is/are, this,that)",
+			"Explanation":"Insert the data that you think is correct",
+			"answers":[
+				{
+					"name":"__ Burger King to your city?",
+					"flag":true
+				},
+				{
+					"name":"__ boy is  often late",
+					"flag":false
+				},
+				{
+					"name":"Do you make __ idea?",
+					"flag":false
+				},
+				{
+					"name":"__ some private schools in this city",
+					"flag":false
+				}
+			]
+		}
+		
+	]
+
+}

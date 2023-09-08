@@ -1,0 +1,65 @@
+.test{
+    color:#eee;
+    .box{
+       // background-color: red;
+        display: flex;
+        width: 600px;
+        height: 500px;
+        margin:5em auto 0 auto;
+        //border:1px solid red;
+        //flex-shrink: 0;
+        //justify-content: space-between;
+        overflow: hidden;
+        .boxQuestion{
+            //margin-top:5em;
+            //width: 600px;
+            //position: absolute;
+            box-sizing: border-box;
+            min-width: 600px;
+            //height: 500px;
+            background-color: #303030;
+            //margin:0 0.1em 0 0.1em;
+            //padding:0.5em;
+
+
+
+            .caption{
+                
+                height: 5em;
+                background-color: #A05353;
+                h1{
+                    margin:0;
+                }
+            }
+            .other{
+                height: 5em;
+                background-color: #8C5C5C;
+                h2{
+                    margin:0;
+                }
+            }
+            .answers{
+                ul{
+                    list-style: none;
+                }
+            }
+        }
+        
+    }
+    footer{
+        .svg{
+            //idth: 40em;
+            div{
+                box-sizing: border-box;
+            }
+            margin:-10em 0 -10em 0;
+            svg{
+                //position: absolute;
+                width: 30em;
+
+            }
+            text-align: center;
+        }
+        text-align: center;
+    }
+}

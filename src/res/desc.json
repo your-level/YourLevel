@@ -1,0 +1,67 @@
+{
+	"Excel":
+	[
+		{"What are the main applications of Excel?":[
+			{"Explanation":"What specific problems is Excel designed for?"},
+			{
+				"name":"Creating reports and calculations",
+				"flag":true
+			},
+			{
+				"name":"Web application development",
+				"flag":false
+			},
+			{
+				"name":"Making plans for the time period",
+				"flag":false
+			},
+			{
+				"name":"Online communications",
+				"flag":false
+			}
+		]},
+		{"Formulas in Excel are?":[
+				{"Explanation":"What are Excel formulas and what should they contain?"},
+				{"Functions in which you need to enter parameters in a certain order":true},
+				{"Code in the VBA programming language":false},
+				{"The user's unique language, which he himself can change and customize to achieve his goals":false}
+			]
+		},
+		{"Why do I need pivot tables?":[
+			{"Explanation":"What practical problems do pivot tables solve?"},
+			{"I view and group information in the context of certain parameters":true},
+			{"To create better reports than in Word":false},
+			{"To create accounting transactions":false},
+			{"To group data instead of formulas":false}
+			]
+		}
+	],
+
+	"The Grammar Test in English for A1":[
+		{"Choose the correct answer":[
+			{"My parents are doctors":true},
+			{"Is your father a doctor?":true},
+			{"Your sister isn’t a model":true},
+			{"You is lost your job":false},
+			{"Cheese are very delicious":false}
+		]},
+		{
+			"Choose incorrect answer":[
+				{"Have you ever been to Minsk?":false},
+				{"If i be rich, i have all possibilities":true},
+				{"I didn’t started a process":true}
+			]
+		},
+		{
+			"Choose suitable words from the list (there is/are, this,that)":[
+				{"Explanation":"Insert the data that you think is correct"},
+				{"__ Burger King to your city?":"is there"},
+				{"__ boy is  often late":"this"},
+				{"Do you make __ idea?":"that"},
+				{"__ some private schools in this city":"there are"}
+			]
+		}
+
+	]
+
+}

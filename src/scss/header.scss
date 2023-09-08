@@ -1,0 +1,16 @@
+.header{
+   display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    .logo{
+        justify-self: center;
+        svg{
+            width: 12em;
+        }
+    }
+   h1{
+    color:#eee;
+    justify-self: center;
+    font-size: 24px;
+   }
+}
