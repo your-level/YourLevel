@@ -1,5 +1,5 @@
 import '../scss/main.scss'
-import React, {useState} from 'react'
+import React from 'react'
 import { ReactSVG } from 'react-svg';
 import main from '../res/main.svg'
 import time from '../res/time.svg'
