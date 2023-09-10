@@ -1,7 +1,8 @@
+![CI/CD](https://github.com/your-level/YourLevel/workflows/Node.js%20CI/badge.svg)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Awesome project btw
 ## Available Scripts
 
 In the project directory, you can run:
