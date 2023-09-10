@@ -1,11 +1,28 @@
 .test{
     color:#eee;
+    header{
+        justify-content: center;
+        display:flex;
+        h2{
+            margin: 1em 1em 0 1em;
+            padding: 0.1em 0.5em 0.1em 0.5em;
+            &:nth-child(2){
+                background-color: red;
+                color:black;
+            }
+            border-radius: 100px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            -ms-border-radius: 100px;
+            -o-border-radius: 100px;
+}
+    }
     .box{
        // background-color: red;
         display: flex;
         width: 600px;
         height: 500px;
-        margin:5em auto 0 auto;
+        margin:2em auto 0 auto;
         //border:1px solid red;
         //flex-shrink: 0;
         //justify-content: space-between;

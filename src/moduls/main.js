@@ -1,5 +1,5 @@
 import '../scss/main.scss'
-import React, {useState} from 'react'
+import React from 'react'
 import { ReactSVG } from 'react-svg';
 import main from '../res/main.svg'
 import time from '../res/time.svg'
@@ -8,8 +8,11 @@ import check from '../res/check.svg'
 import book from '../res/book.svg'
 
 
+import data from '../res/desc for tests.json'
 
-function Main() {
+
+
+function Main(page, getPage) {
   let setPage = ()=>{
     document.querySelector('header').style.display = 'none'
     document.querySelector('main').style.display = 'none'
@@ -17,13 +20,17 @@ function Main() {
 
 
     document.querySelector('.test').style.display = 'block'
-
+    
   }
-
+  //если обьект кей равен page то выводит values[]
+  //console.log(data.$[page.page])
+  
+  
+  
   return (
     <div class='main'>
         <div class='left'>
-            <h1>Frontend Developer</h1>
+            <h1>{page.page}</h1>
             <div class='text'>
               <p>A popular direction in development, these developers develop the appearance of the site, they are the cosmetologists for these beauties.</p>
             </div>

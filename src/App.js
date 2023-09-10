@@ -1,5 +1,6 @@
 import './scss/app.scss'
 import React, { useState } from 'react'
+import data from './res/desc for tests.json'
 
 //moduls
 import Header from './moduls/Header'
@@ -10,9 +11,11 @@ import Test from './moduls/Test'
 
 
 function App() {
-  const [page, getPage] = useState(0)
-
-
+  
+  const [page, getPage] = useState(Object.keys(data)[0])
+  
+  
+  
   return (
     <div class='app'>
       <div class='box'>
@@ -20,14 +23,14 @@ function App() {
           <Header/>
         </header>
         <main>
-          <Main/>
+          <Main page={page}  getPage={getPage} />
         </main>
         <footer>
           <Footer page={page} getPage={getPage}/>
         </footer>
 
 
-        <Test/>
+        <Test page={page} getPage={getPage}/>
       </div>
       
     </div>
