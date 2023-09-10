@@ -74,4 +74,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: advens/yourlevel:${{ github.ref }}
+          tags: advens/yourlevel:${{ steps.meta.outputs.tags }}
