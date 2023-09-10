@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "master" ]
     tags:
-      - 'v*.*'
+      - '*.*'
   pull_request:
     branches: [ "master" ]
 
@@ -62,7 +62,7 @@ jobs:
           images: |
             advens/yourlevel        
           tags: |
-            type=semver,pattern={{version}}
+            type=pep440,pattern={{version}}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
