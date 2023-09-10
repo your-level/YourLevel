@@ -71,4 +71,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: advens/YourLevel:1.0
+          tags: advens/yourlevel:1.0
