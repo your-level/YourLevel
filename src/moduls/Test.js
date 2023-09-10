@@ -15,7 +15,7 @@ function Test(page, getPage) {
     
   const [position, getPosition] = useState(-600)
   const [resultAnswer, getReasultAswer] = useState('')
-  const [checkedMus, getCheckedMus] = useState([])
+  const [checkedMus] = useState([])
  //let checkedMus = []
   let trueQestion = []
   let content
@@ -41,13 +41,13 @@ function Test(page, getPage) {
        //delay: 1000,
      })
 
-     content.map(item=>{
-      item.answers.map(answer=>{
+     content.map(item=>(
+      item.answers.map(async answer=>{
         if(answer.flag){
           trueQestion.push(answer.flag)
         }
       })
-     })
+     ))
      let correct = checkedMus.filter((i)=>{ return i==='true'})
      if(correct.length === checkedMus.length & checkedMus.length === trueQestion.length){
       getReasultAswer('da')
@@ -59,7 +59,7 @@ function Test(page, getPage) {
    }
    
 
-   Object.keys(data).map((i, index)=>{
+   Object.keys(data).map(async(i, index)=>{
     //console.log(typeof(i))
     if(i === page.page){
       content = Object.values(data)[index]

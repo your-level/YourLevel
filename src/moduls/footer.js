@@ -1,5 +1,5 @@
 import '../scss/footer.scss'
-import React, { useEffect } from 'react'
+import React from 'react'
 import data from '../res/desc for tests.json'
 
 function Footer(page, getPage) {

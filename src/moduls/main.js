@@ -8,9 +8,6 @@ import check from '../res/check.svg'
 import book from '../res/book.svg'
 
 
-import data from '../res/desc for tests.json'
-
-
 
 function Main(page, getPage) {
   let setPage = ()=>{
