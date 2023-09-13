@@ -4,12 +4,13 @@ import anime from 'animejs/lib/anime.es.js';
 import { ReactSVG } from 'react-svg'
 import logo from '../res/logo.svg'
 //import place from '../res/place.svg'
-import certificate from '../res/certificate.svg'
+import certificate from '../res/result.svg'
 //import data from '../res/desc.json'
 import data from '../res/desc for tests.json'
+import downCertifi from '../res/certifi.pdf'
+
 
 //moduls
-import NewCertif from '../moduls/certificate'
 //
 
 
@@ -185,21 +186,21 @@ function Test(page, getPage) {
         })
   //=========================================================================================
     
-    function setNewText(props){
+    // function setNewText(props){
       
       
-      if(props.target.value.length >= 16){
-        //console.log('no')
+    //   if(props.target.value.length >= 16){
+    //     //console.log('no')
         
-      }
-      else if(props.target.value.length === 0){
-        document.querySelector('.textName').innerHTML = 'Enter Your Name'        
-      }
-      else{
-        document.querySelector('.textName').innerHTML = props.target.value
+    //   }
+    //   else if(props.target.value.length === 0){
+    //     document.querySelector('.textName').innerHTML = 'Enter Your Name'        
+    //   }
+    //   else{
+    //     document.querySelector('.textName').innerHTML = props.target.value
         
-      }
-    }
+    //   }
+    // }
 
    //=========================================================================================
    function save(){
@@ -209,13 +210,17 @@ function Test(page, getPage) {
 
     let result = <div class='boxQuestion'>
                     <div class='result'>
-                      <p>{resultAnswer}</p>
+                      <p class='resultAnswer'>{resultAnswer}</p>
                       <div  class='true'>
-                          <p>You answered all the questions correctly here is your certificate</p>
+                          <p>
+                            You answered all the questions correctly here is your certificate<br/>
+                            Click on it and Download
+
+                          </p>
                         
-                          <ReactSVG class='certificate' onClick={save} src={certificate}/>
+                          <a href={downCertifi} download='yourLevel.pdf'><ReactSVG class='certificate' onClick={save} src={certificate}/></a>
                         <div>
-                          <input placeholder='Enter Your name' onInput={setNewText} ></input>
+                          {/* <input placeholder='Enter Your name' onInput={setNewText} ></input> */}
                         </div>
                       </div>
                       
@@ -226,9 +231,18 @@ function Test(page, getPage) {
     let numbers = content.map((i, index)=>{
       return <h1 class='num'>{index+1}</h1>
     })
-    console.log(NewCertif)
-    console.log(certificate)
+    //console.log(certificate)
     
+
+    anime({
+      targets:'.resultCertifi',
+      translateY:-10,
+      duration:1000,
+      direction: 'alternate',
+      loop: true,
+      easing: 'linear',
+      autoplay: true,
+    })
   //=========================================================================================
 
   return (
@@ -243,12 +257,11 @@ function Test(page, getPage) {
           {box}
           {result} 
         </div>
-        <ReactSVG src={NewCertif}/>
         
       </main>
       <footer>
         {/* <ReactSVG class='svg' src={place}/> */}
-        <ReactSVG src={logo} wrapper="span"/>
+        <ReactSVG src={logo} class='svg'/>
       </footer>
     </div>
   );

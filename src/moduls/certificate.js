@@ -1,4 +1,5 @@
 import React from 'react'
+//const ob = require('html2canvas')
 
 
 function Certificate(){

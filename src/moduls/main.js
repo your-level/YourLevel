@@ -38,16 +38,17 @@ function Main(page, getPage) {
     
    })
   //=========================================================================================
+  anime({
+    targets:'.certrifSVG',
+    translateY:-10,
+    duration:1000,
+    direction: 'alternate',
+    loop: true,
+    easing: 'linear',
+    autoplay: true,
+  })
   
-    anime({
-      targets:'.certrifSVG',
-      translateY:-10,
-      duration:1000,
-      direction: 'alternate',
-      loop: true,
-      easing: 'linear',
-    })
-  
+
   
   //=========================================================================================
 
