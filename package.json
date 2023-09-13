@@ -2,23 +2,27 @@
   "name": "linecourse",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://your-level.github.io/YourLevel/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animejs": "^3.2.1",
+    "d3": "^7.8.5",
+    "download": "^8.0.0",
+    "file-saver": "^2.0.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "object-to-xml": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-svg": "^16.1.23",
     "sass": "^1.66.1",
     "scss": "^0.2.4",
+    "svg2pdf.js": "^2.2.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,8 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.0.0"
   }
 }

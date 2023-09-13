@@ -1,11 +1,14 @@
 import '../scss/main.scss'
 import React from 'react'
 import { ReactSVG } from 'react-svg';
+import anime from 'animejs';
 import main from '../res/main.svg'
 import time from '../res/time.svg'
 import time2 from '../res/time2.svg'
 import check from '../res/check.svg'
 import book from '../res/book.svg'
+import data from '../res/desc for tests.json'
+
 
 
 
@@ -21,7 +24,33 @@ function Main(page, getPage) {
   }
   //если обьект кей равен page то выводит values[]
   //console.log(data.$[page.page])
+  //=========================================================================================
+   
+  let content
+  Object.keys(data).map(async(i, index)=>{
+    //console.log(typeof(i))
+    if(i === page.page){
+      content = Object.values(data)[index]
+    }
+    else{
+      
+    }
+    
+   })
+  //=========================================================================================
   
+    anime({
+      targets:'.certrifSVG',
+      translateY:-10,
+      duration:1000,
+      direction: 'alternate',
+      loop: true,
+      easing: 'linear',
+    })
+  
+  
+  //=========================================================================================
+
   
   
   return (
@@ -29,7 +58,7 @@ function Main(page, getPage) {
         <div class='left'>
             <h1>{page.page}</h1>
             <div class='text'>
-              <p>A popular direction in development, these developers develop the appearance of the site, they are the cosmetologists for these beauties.</p>
+              <p>{content[0].name}</p>
             </div>
             <div class='blocks'>
                 <ReactSVG class='svg' src={time}/><li>Free test</li>
